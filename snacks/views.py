@@ -14,7 +14,7 @@ class SnacksDetailView(DetailView):
 class SnacksCreateView(CreateView):
     template_name='createsnaks.html'
     model = Snack
-    fields = ['title','purchaser','description']
+    fields = ['title','purchaser','description','url_image']
 
 class SnacksDeleteView(DeleteView):
     template_name='deletesnaks.html'

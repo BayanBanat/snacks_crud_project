@@ -23,5 +23,9 @@
 
     {% elif snack.title == 'Manakish' %}
          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqBqITXAYfxHZOXUCHa3ywh1J7U-IslOvHi1Zqiq145LA6P5fH" alt="Default Image">
+    {% elif snack.title == 'Manakish' %}
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqBqITXAYfxHZOXUCHa3ywh1J7U-IslOvHi1Zqiq145LA6P5fH" alt="Default Image">
+    {% else %}
+    <img src={{snack.url_image}}>
     {% endif %}
 {% endblock %}
