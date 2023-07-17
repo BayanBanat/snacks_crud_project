@@ -1,0 +1,188 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex: 1; 
+  
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; 
+  font-size: 25px;
+}
+
+.navigation a {
+  text-decoration: none;
+  margin: 0 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+
+#desc {
+  max-width: 600px;
+  word-wrap: break-word;
+}
+
+
+.div2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+#logo{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+
+h3 {
+  font-size: 19px;
+  margin: 40px;
+  color: #2d2929;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  margin: 40px;
+  border-radius: 20%;
+}
+.snack-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+a {
+  text-decoration: underline;
+  text-decoration: none;
+  color: #968e00;
+  
+}
+
+.card-1 {
+  background-color: #c2bebe;
+  border-radius: 20%;
+}
+
+.card-2 {
+  background-color: #f8c8c8;
+  border-radius: 20%;
+}
+
+
+.card-3 {
+  background-color: #f6d3be;
+  border-radius: 20%;
+}
+.card-4 {
+  background-color: #d1d1f6;
+  border-radius: 20%;
+}
+
+.card-5 {
+  background-color: #cdf4cd;
+  border-radius: 20%;
+}
+
+.card-6 {
+  background-color: #f6c5a6;
+  border-radius: 20%;
+}
+
+.imglist{
+  width: 300px;
+  height: 200px;
+}
+#h3home{
+  font-size: 30px;
+}
+a:hover {
+  color: #f4d616;
+}
+
+#img{
+  width: 100px;
+  height: 100px;
+}
+h1 {
+  color:  #242424;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+form {
+  margin: 50px;
+}
+
+input[type="submit"] {
+  background-color: #d7c78c;
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 270px;
+  
+}
+.create{
+  display: flex;
+  justify-content: space-between;
+}
+select{
+  background-color:  #f7ddb7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background-color: #f7ddb7;
+}
+
+.divcreate{
+  width: 60%;
+
+}
+.divcreate1{
+  width: 40%;
+  gap: 50px;
+}

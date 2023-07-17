@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% block title%} Create Snack {% endblock %}
+{% block content%}
+<h1>Create {{snack.title}}</h1>
+<section class="create">
+    <div class="divcreate">
+   <form  method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    
+    <input type="submit">
+
+</form> 
+</div>
+<div class="divcreate1">
+    <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaKlFMXiZb_GNodR-qYoXS-f_2fSe6TzF1o5fdnbEZIZjy2CiHHfYxCrBBkjz4rLX6-a8&usqp=CAU">
+</div>
+</section>
+
+
+{% endblock%}

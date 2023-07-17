@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Snack Details{% endblock %}
+{% block nav %}
+    <a href="{% url 'updatesnaks' snack.id %}">Update Snack</a>
+    <a href="{% url 'deletesnaks' snack.id %}">Delete Snack</a>
+{% endblock %}
+{% block content %}
+    <h1>{{ snack.title|capfirst }}</h1>
+    <h3>Title: {{ snack.title|capfirst }}</h3>
+    <h3>Purchaser: {{ snack.purchaser|capfirst }}</h3>
+    <h3 id="desc">Description: {{ snack.description|capfirst }}</h3>
+
+    {% if snack.title == 'Mansaf' %}
+        <img src="https://www.cheftariq.com/wp-content/uploads/2020/04/mansaf-4-1.jpg" alt="Type 1 Image">
+    {% elif snack.title == 'Stuffed squash.' %}
+        <img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2Farchive%2F807094f1289a1f9f7d65e95fb263d8e379641e00" alt="Type 2 Image">
+    {% elif snack.title == 'Fatteh' %}
+        <img src="https://images.food52.com/4MHoGoY7lpO09xOGRcgpW-_6KHQ=/1930x1286/filters:format(webp)/9586520b-bde9-4a82-a96c-3016f9f45f52--Fattet_Hummus_Mufid_.jpg" alt="Type 3 Image">
+    {% elif snack.title == 'Warak enab' %}
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJmrXge8Mv2uzQAmBClTyfGXOTVGqr5gHhw5j6QeFiURYXL_mU" alt="Default Image">
+    {% elif snack.title == 'Sfiha' %}
+        <img src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTCLw2PPisPaY-2DDTz5KZlv_ZWw9GdF2BpB1nosaGh-i-HiiDK4h38ElTX98jfrUbb" alt="Default Image">
+
+    {% elif snack.title == 'Manakish' %}
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqBqITXAYfxHZOXUCHa3ywh1J7U-IslOvHi1Zqiq145LA6P5fH" alt="Default Image">
+    {% endif %}
+{% endblock %}
